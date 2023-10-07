@@ -1,0 +1,78 @@
+
+
+— Redis Commands ——
+
+docker pull redis:alpine
+
+docker run -it -p 6379:6379 -d --name redis-server redis:alpine
+
+
+docker inspect d81550414d65 | grep IPAddress
+
+
+docker build -t codeonedigest/node-redis-demo-1:1.0.0 .
+
+Redis server - 172.17.0.2
+
+
+docker run -it -d -p 3000:3000 -e "REDIS_SERVER_IP=172.17.0.2" --name node-redis-demo-1 codeonedigest/node-redis-demo-1:1.0.0
+
+
+
+
+--- Node js application commands --
+
+mkdir nodejs-redis-demo
+cd nodejs-redis-demo
+npm init -y
+
+npm i express
+npm i redis
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+docker inspect bridge
+
+
+
+
+
+
+
+
+
+Welcome - W
+Agenda - W
+Introduction to Project / module - W
+Architecture - W
+Deploy & run Redis container - M
+Coding - M
+Create container image - M
+Run container image - M
+Testing - M
+Cleanup - M
+GIT Repo - W
+Summary - W
